@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML video Example</title>
+</head>
+<body>
+    <h1>Embedding a video in HTML</h1>
+
+    <p>Below is an example of how to add a video to a webpage using the HTML <code>&lt;video&gt;</code> tag.</p>
+
+    <video width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.webm" type="video/webm">
+        your browser does not support the video tag.
+    </video>
+
+    <p><strong>Explanation:</strong></p>
+    <ul>
+        <li><code>controls</code>: Adds play, pause, volume, and fullscreen buttons.</li>
+        <li><code>source</code>: specifies different video formats for better browser compatibility.</li>
+        <li>Text inside the '<video>' tag appears if the browser doesn't support videos.</li>
+    </ul>
+    
+</body>
+</html>
