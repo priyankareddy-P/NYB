@@ -75,17 +75,17 @@ CREATE TABLE xxnyb_employees_test (
     CONSTRAINT emp_pk PRIMARY KEY (employee_id, employee_name)
 );
 
-insert into xxnyb_employees_test values (1001, 'Chandeep', sysdate -280, 10);
-insert into xxnyb_employees_test values (1002, 'Chandeep', sysdate -218, 20);
+insert into xxnyb_employees_test values (10051, 'rekha', sysdate -280, 10);
+insert into xxnyb_employees_test values (10042, 'varshini', sysdate -219, 20);
 
-insert into xxnyb_employees_test values (1001, 'Vamsi', sysdate -280, 10);
-insert into xxnyb_employees_test values (1002, 'Vamsi', sysdate -268, 20);
+insert into xxnyb_employees_test values (10010, 'priya', sysdate 900, 10);
+insert into xxnyb_employees_test values (100, 'priya', sysdate 560, 20);
 
 commit;
 
 
-insert into xxnyb_employees_test values (1001, 'Vamsi', sysdate -268, 20);
+insert into xxnyb_employees_test values (100, 'priya', sysdate 700, 20);
 
-insert into xxnyb_employees_test values (NULL, NULL, sysdate -268, 20);
+insert into xxnyb_employees_test values (NULL, NULL, sysdate 800, 20);
 
 select * from xxnyb_employees_test;
