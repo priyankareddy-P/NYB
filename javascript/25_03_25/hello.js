@@ -7,4 +7,4 @@
 
 
 
-console.log("hello js This is ajava script code")
+console.log("hello js This is a java script code")

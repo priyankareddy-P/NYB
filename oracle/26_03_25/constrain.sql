@@ -10,4 +10,4 @@ CREATE TABLE students (
  --Insert the data
  INSERT INTO students (student_id, name, email, age)
  values(1, 'priya', 'priyanka32gmail.com', 20);
- values(2,'hima','hima2@gmail.com',30);
+ values(1, 'hima', 'hima2@gmail.com', 30);
