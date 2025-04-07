@@ -1,11 +1,12 @@
-CREATE TABLE xxnyb_emp_courses (
-    course_no          NUMBER,
-    course_name        VARCHAR2(200) NOT NULL,
-    employee_id        NUMBER NOT NULL,
-    department_id      NUMBER NOT NULL,
+CREATE TABLE xxnyb_emp_courses
+(
+    course_no NUMBER,
+    course_name VARCHAR2(200) NOT NULL,
+    employee_id NUMBER NOT NULL,
+    department_id NUMBER NOT NULL,
     course_description VARCHAR2(500),
-    course_rating      VARCHAR2(10) DEFAULT 'NA',
-    comments           VARCHAR2(500),
+    course_rating VARCHAR2(10) DEFAULT 'NA',
+    comments VARCHAR2(500),
     CONSTRAINT course_no_pk PRIMARY KEY ( course_no ),
     CONSTRAINT emp_id_fk FOREIGN KEY ( employee_id )
         REFERENCES xxnyb_employees_test ( employee_id ),
@@ -31,17 +32,18 @@ ADD CONSTRAINT emp_id_pk PRIMARY KEY (employee_id);
 
 --delete the duplicate data
 
-select * from xxnyb_employees_test
+select *
+from xxnyb_employees_test
 order by employee_id;
 
 --ROWID
 select xet.rowid, length(xet.rowid), xet.*
-  from xxnyb_employees_test xet
+from xxnyb_employees_test xet
 order by xet.rowid desc;
 
 select xet.rowid, xet.*
-  from xxnyb_employees_test xet
- where xet.employee_id = 1002
+from xxnyb_employees_test xet
+where xet.employee_id = 1002
 order by xet.rowid desc;
 
 
@@ -57,16 +59,16 @@ FROM
     (
         SELECT
         xet.rowid,
-            xet.*
-        FROM
-            xxnyb_employees_test xet
-        WHERE
+        xet.*
+    FROM
+        xxnyb_employees_test xet
+    WHERE
             xet.employee_id = 1001
-        ORDER BY
+    ORDER BY
             xet.rowid DESC
     ) emp_test
 where rownum < 3;
 
 select e.rowid, e.*
- from employees e
- where rownum < 12;
+from employees e
+where rownum < 12;

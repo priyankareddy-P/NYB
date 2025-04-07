@@ -1,4 +1,4 @@
--Constraints
+--Constraints
 --Creating a table with NOT NULL constraint: XXNYB_CONSTRAINTS_TEST
 --NOT NULL
 
