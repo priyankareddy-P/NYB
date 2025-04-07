@@ -18,6 +18,6 @@ else if(average >=70){
 else if(average >=60) {
     console.log("passing, but could be better.");
 }
-else {
+else if(below 60) {
     console.log("Failing.");
 }
