@@ -89,20 +89,59 @@
 // console.log(a !==b);
 
 
-//loose equality
+// //loose equality
 
-let a=5
-let b="5"
-console.log(a==b);
+// let a=5
+// let b="5"
+// console.log(a==b);
 
-//strict inequality
+// //strict inequality
 
-let x=10
-let y="10"
-console.log(x!==y);
+// let x=10
+// let y="10"
+// console.log(x!==y);
 
-//loose inequality
+// //loose inequality
 
-let p=7
-let q="8"
-console.log(p!=q);
+// let p=7
+// let q="8"
+// console.log(p!=q);
+
+
+//Ternary operators
+
+// let number=5
+// let result = number > 0 ? "Positive" : "Not positive";
+// console.log(result);
+
+
+// let age=16
+// let status=age>=18 ? "Adult" : "minor";
+// console.log(status);
+
+//even or odd
+
+// let num=7
+// let result=num % 2 === 0 ? "Even" : "Odd";
+// console.log(result);
+
+//logical operators
+
+// //AND 
+
+// console.log(true && true);
+// console.log(true && false);
+// console.log(false && true);
+// console.log(false && false);
+
+// //OR
+
+// console.log(true || true);
+// console.log(true || false);
+// console.log(false || true);
+// console.log(false || false);
+
+// //NOT
+
+// console.log(!true);
+// console.log(!false);

@@ -1,10 +1,10 @@
 let sum = 0;
-for(let i = 0; i< grades.length; i++) {
-    sum += grades[i];
+for(let i = 0; i<length; i++) {
+    sum += [i];
 }
-let average = sum/grades.length;
+let average = sum/length;
 
-console.log("average Grade:", average);
+console.log("average:");
 
 if (average >=90) {
     console.log("Excellent.");
@@ -18,6 +18,7 @@ else if(average >=70){
 else if(average >=60) {
     console.log("passing, but could be better.");
 }
-else if(below 60) {
+else if(average<=60) {
     console.log("Failing.");
 }
+
