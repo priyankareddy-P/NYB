@@ -10,7 +10,7 @@ CREATE TABLE employee (
 --Insert into
 
 Insert into employee (emp_id, emp_name, salary, doj, manager_id, dept_id)
- values(100,'priyanka',20000,To_date('2001-09-23','yyyy-mm-dd'),Null, 1);
+values(100,'priyanka',20000,To_date('2001-09-23','yyyy-mm-dd'),Null, 1);
 
 
  
@@ -40,7 +40,7 @@ Insert into employee (emp_id, emp_name, salary, doj, manager_id, dept_id)
 
  
  Insert into employee (emp_id, emp_name, salary, doj, manager_id, dept_id)
- values(108,'hima',30000,To_date(15-3-2003','yyyy-mm-dd'),103,5);
+ values(108,'hima',30000,To_date('15-3-2003','yyyy-mm-dd'),103,5);
  
  --queries
 
@@ -49,16 +49,18 @@ WHERE doj >= add_months(sysdate, -60);
 
 --calculate annual salary
 
-select emp_id,emp_name,salary,(salary *12) As annual_salary from employee;
+select emp_id,emp_name,salary,(salary *12) As annual_salary 
+from employee;
 
 
 --show length of service
 
 select emp_id, emp_name, doj,
- Round(months_between(sysdate, doj) As years of service from employee;
+ Round(months_between(sysdate, doj)) As years_of_service 
+ from employee;
 
 --give a 10% bonus 
 
 update employee
 salary= salary + (salary*0.10)
-where salry <30000;
+where salary <30000;
