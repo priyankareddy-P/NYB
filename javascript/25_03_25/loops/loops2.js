@@ -83,6 +83,3 @@ while (c <= 10)
 }
 
 
-//do while
-
-//
