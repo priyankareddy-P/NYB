@@ -1,7 +1,7 @@
 ---decode functions
 
-//employee type based on job roles
-//create a table
+--employee type based on job roles
+--create a table
 
 CREATE TABLE staff (
     emp_id   NUMBER,
@@ -43,7 +43,6 @@ INSERT INTO staff (
            'satish',
            'Technical lead' );
 
-desc staff ;
 
 --- employee type based on job role
 SELECT
@@ -104,5 +103,3 @@ SELECT
     END AS salary_grade
 FROM
     employee;
-    
-desc CMR;
