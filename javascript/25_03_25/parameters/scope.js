@@ -36,5 +36,5 @@ console.log("outside loop:",i);
     var x = 10;
     var y = 20;
 }
-console.log(x);
-console.log(y);
+console.log(x); //var is not block scoped
+console.log(y); //b is not defined git add -A
