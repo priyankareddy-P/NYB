@@ -9,9 +9,7 @@ let studentInfo = {
 function getDetails(student)
 {
     let subjectList = student.subjects.join(",");
-    return "name:" +student.name 
-    return "age:"+student.age
-    return "subjectList:"+subjectList;
+    return "name:" + student.name + ", age: " + student.age + ", subjects: " + subjectList;
 }
 console.log(getDetails(studentInfo));
 
