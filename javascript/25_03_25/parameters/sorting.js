@@ -85,12 +85,15 @@ console.log(e);
 //compare each value using for loop
 
 let y = [5,12,8,20];
-for (let i = 0; i <y.length;i++)
+for (let i = 0; i < y.length;i++)
 {
     if(y[i] > 10)
     {
-        console.log(y[i] + " is greater than 10");
+        console.log(y[i] + " is greater than 10 ");
     }
 }
+
+
+
 
 
